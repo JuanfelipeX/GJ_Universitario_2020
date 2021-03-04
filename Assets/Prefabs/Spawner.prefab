@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8036077579735863629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8036077579735863627}
+  - component: {fileID: 8036077579735863628}
+  - component: {fileID: 8036077579735863626}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Respawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8036077579735863627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036077579735863629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8036077579735863628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036077579735863629}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e6205251f0716488d6d8d1235b93fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigo: {fileID: 3620797186348735187, guid: 13834d7c6fcee26488034160fdf229ec, type: 3}
+  enemigo2: {fileID: 4421235511331857233, guid: 42c5d6ec845149d4da9b4e0dea91502a, type: 3}
+  enemigoEspecial: {fileID: 759010860433544303, guid: 44feb4a2dd1f3614191a0f1e93db6931, type: 3}
+  finalBoss: {fileID: 0}
+  limiteMinimo: -7
+  limiteMaximo: 7
+  enemyCount: 5
+  spawnWait: 0.8
+  startWait: 1
+  waveWait: 0
+--- !u!114 &8036077579735863626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036077579735863629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b4c00ad7eafae4abc389d28ef8673f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUps:
+  - {fileID: 5517631886557637926, guid: b95c8af6003e74b45a86698f7a7d15d1, type: 3}
+  - {fileID: 5429249861485296858, guid: e28736d756de0d4448df8d6602e3fef5, type: 3}
+  - {fileID: 2348330079045831763, guid: 4b397cbc7ef68e245ab7f53039152908, type: 3}
+  - {fileID: 7052817245364413447, guid: a6cff864f67827843b8af9617c0f1f72, type: 3}
+  limiteMinimo: -7
+  limiteMaximo: 7
+  PwUpCount: 1
+  spawnWait: 15
+  startWait: 15
+  waveWait: 0
